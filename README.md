@@ -11,7 +11,7 @@
 **Ricardo Reiter**
 
 - GitHub: [@ricareiter](https://github.com/ricareiter)
-- Linkedin [Ricardo Reiter](https://www.linkedin.com/in/ricardo-reiter-617593231/)
+- Linkedin [Ricardo Reiter](https://www.linkedin.com/in/ricardoreiter/)
 
 ## 🤝 Contributing
 
