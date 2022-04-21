@@ -7,7 +7,7 @@ import MovieInfoComponent from "./Components/MovieInfoComponent";
 const Header = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: black;
+  background-color: #369ff5;
   color: white;
   padding: 10px;
   font-size: 25px;
@@ -73,7 +73,6 @@ function App() {
     setSearchQuery(e.target.value);
     const timeout = setTimeout(() => fetchData(searchQuery, apiKey), 500);
     setTimeOutId(timeout);
-    console.log(searchQuery);
   };
 
   return (
