@@ -81,13 +81,11 @@ function App() {
 
   const searchSubmit = () => {
     fetchData(searchQuery, apiKey);
-    console.log(searchQuery);
   };
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       fetchData(searchQuery, apiKey);
-      console.log(searchQuery);
     }
   };
 
