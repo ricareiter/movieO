@@ -1,10 +1,16 @@
+# MovieO
+
+Made with Javascript, React and Styled Components.
+
+<p>
+    <img src="src/Components/icon-img/movioimg.png" >
+</p>
+
 ## Built With
 
-- HTML
-- CSS
-- Styled Components
 - JavaScript
 - React
+- Styled Components
 
 ## Author
 
