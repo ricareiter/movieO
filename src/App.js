@@ -3,6 +3,7 @@ import MovieComponent from "./Components/MovieComponent";
 import React, { useState } from "react";
 import axios from "axios";
 import MovieInfoComponent from "./Components/MovieInfoComponent";
+import searchIcon from "./Components/icon-img/search.png";
 
 const Header = styled.div`
   display: flex;
@@ -35,6 +36,13 @@ const SearchBox = styled.div`
   align-items: center;
 `;
 
+const SearchBtn = styled.img`
+  margin-right: 0.8rem;
+  margin-left: 1rem;
+  border: none;
+  cursor: pointer;
+`;
+
 const SearchInput = styled.input`
   color: black;
   font-size: 16px;
@@ -57,7 +65,6 @@ const apiKey = "6f5e60dc";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState();
-  const [timeOutId, setTimeOutId] = useState();
   const [movieList, setMovieList] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState();
 
@@ -69,10 +76,19 @@ function App() {
   };
 
   const onTextChange = (e) => {
-    clearTimeout(timeOutId);
     setSearchQuery(e.target.value);
-    const timeout = setTimeout(() => fetchData(searchQuery, apiKey), 500);
-    setTimeOutId(timeout);
+  };
+
+  const searchSubmit = () => {
+    fetchData(searchQuery, apiKey);
+    console.log(searchQuery);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      fetchData(searchQuery, apiKey);
+      console.log(searchQuery);
+    }
   };
 
   return (
@@ -84,7 +100,9 @@ function App() {
             onChange={onTextChange}
             value={searchQuery}
             placeholder="Search Movie"
+            onKeyDown={handleKeyDown}
           />
+          <SearchBtn src={searchIcon} onClick={searchSubmit}></SearchBtn>
         </SearchBox>
       </Header>
       {selectedMovie && <MovieInfoComponent selectedMovie={selectedMovie} />}
