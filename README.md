@@ -6,6 +6,10 @@ Made with Javascript, React and Styled Components. MoviO is the perfect applicat
     <img src="src/Components/icon-img/movioimg.png" >
 </p>
 
+## Live Demo
+
+- [Live Demo in Netlify](https://movio-app.netlify.app/)
+
 ## Built With
 
 - JavaScript
