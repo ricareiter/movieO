@@ -1,6 +1,6 @@
 # MovieO
 
-Made with Javascript, React and Styled Components.
+Made with Javascript, React and Styled Components. MoviO is the perfect application to get information about your favorite movies!
 
 <p>
     <img src="src/Components/icon-img/movioimg.png" >
