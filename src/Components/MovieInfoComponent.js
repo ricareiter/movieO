@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-const apiKey = "6f5e60dc";
+const apiKey = process.env.REACT_APP_API_KEY;
 
 const Container = styled.div`
   display: flex;

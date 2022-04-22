@@ -61,7 +61,7 @@ const MovieListContainer = styled.div`
   justify-content: space-evenly;
 `;
 
-const apiKey = "6f5e60dc";
+const apiKey = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [searchQuery, setSearchQuery] = useState();
